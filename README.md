@@ -1,7 +1,7 @@
 # InkTime ⌚ — Smartwatch Open Source
 
 <p align="center">
-  <img src="Images/watch_render.png" alt="InkTime Smartwatch Render" width="500"/>
+  <img src="Images/inktime-full-watch.jpg" alt="InkTime Smartwatch Render" width="500"/>
 </p>
 
 **InkTime** este un smartwatch open-source, cu cost redus, construit în jurul **Nordic nRF52840** System-on-Chip, echipat cu un **display e-paper de 1.54"**. Proiectat pentru producție de masă, acest proiect acoperă designul hardware complet, de la schemă până la fișierele necesare fabricației.
@@ -25,7 +25,7 @@
 ## Diagrama Bloc
 
 <p align="center">
-  <img src="Images/block_diagram.png" alt="InkTime Diagrama Bloc" width="800"/>
+  <img src="Images/block_diagram.jpg" alt="InkTime Diagrama Bloc" width="800"/>
 </p>
 
 ### Arhitectura Sistemului
@@ -137,26 +137,26 @@
 | 13 | C1, C2, C17, C18 | Condensator | 12pF | 0201 | 4 |
 | 14 | C3, C4 | Condensator | 1pF | 0201 | 2 |
 | 15 | C5, C7, C8, C12, C19 | Condensator | 100nF | 0201 | 5 |
-| 16 | C6, C14, C20, C21 | Condensator | 4.7µF | 0201 | 4 |
+| 16 | C6, C14, C20, C21 | Condensator | 4.7µF | 0402 | 4 |
 | 17 | C9 | Condensator | 820pF | 0201 | 1 |
 | 18 | C11 | Condensator | 100pF | 0201 | 1 |
 | 19 | C16 | Condensator | 27nF | 0201 | 1 |
-| 20 | C1-EP-DR | Condensator | 10µF | 0201 | 1 |
-| 21 | C2-EP-DR | Condensator | 4.7µF/25V | 0201 | 1 |
+| 20 | C1-EP-DR | Condensator | 10µF | 0402 | 1 |
+| 21 | C2-EP-DR | Condensator | 4.7µF/25V | 0402 | 1 |
 | 22 | C23, C34 | Condensator | 0.1µF | 0201 | 2 |
-| 23 | C24 | Condensator | 10µF | 0201 | 1 |
-| 24 | C25, C33 | Condensator | 22µF | 0201 | 2 |
-| 25 | C32 | Condensator | 1µF | 0201 | 1 |
-| 26 | C43 | Condensator | 4.7µF | 0201 | 1 |
+| 23 | C24 | Condensator | 10µF | 0402 | 1 |
+| 24 | C25, C33 | Condensator | 22µF | 0402 | 2 |
+| 25 | C32 | Condensator | 1µF | 0402 | 1 |
+| 26 | C43 | Condensator | 4.7µF | 0402 | 1 |
 | 27 | C27, C29, C30, C31, C42 | Condensator | GRM011R60J152KE01 (1.5nF) | 0201 | 5 |
-| 28 | EPD_C1, EPD_C2 | Condensator | 1µF/50V | 0201 | 2 |
+| 28 | EPD_C1, EPD_C2 | Condensator | 1µF/50V | 0402 | 2 |
 | 29 | EPD_C5–C12 | Condensator | 0.1µF/50V | 0201 | 8 |
 | 30 | L1 | Bobină | 3.9nH | 0402 | 1 |
 | 31 | L2 | Bobină | 10µH | 0402 | 1 |
 | 32 | L3 | Bobină | 15nH | 0402 | 1 |
 | 33 | L5 | Bobină | 68µH | 4828 | 1 |
 | 34 | L7 | Bobină | 0.47µH | 2016 | 1 |
-| 35 | R17, R18, R1_EP_DR–R9, R_PWR_EPD, R_TYPE_SEL | Rezistoare | Diverse | 0201 | 14 |
+| 35 | R17, R18, R1_EP_DR–R9, R_PWR_EPD, R_TYPE_SEL | Rezistoare | Diverse | 0402 | 14 |
 | 36 | D3, D4, D5 | Diodă Schottky | MBR0530 | SOD-323 | 3 |
 | 37 | ANT1 | Antenă Chip | 2450AT18B100E | 3216 | 1 |
 | 38 | X1 | Cristal | 32 MHz | 2016 | 1 |
@@ -408,13 +408,8 @@ Amplasate pe marginea stângă a PCB-ului pentru operare ca butoane laterale. Fi
 ### Randări PCB
 
 <p align="center">
-  <img src="Images/Capture.PNG" alt="PCB Vedere de Sus" width="600"/>
-  <br><em>PCB Layer-ul TOP — Randare 3D (Vedere Izometrică)</em>
-</p>
-
-<p align="center">
-  <img src="Images/Capture1.PNG" alt="PCB Vedere de Jos" width="600"/>
-  <br><em>PCB Layer-ul BOTTOM — Randare 3D (Vedere Izometrică)</em>
+  <img src="Images/3dpcb.jpg" alt="PCB Vedere 3D" width="600"/>
+  <br><em>PCB — Randare 3D</em>
 </p>
 
 ---
@@ -460,8 +455,13 @@ Modele parametrice OpenSCAD sunt furnizate în folderul `Mechanical/`:
 ### Vedere Explodată
 
 <p align="center">
-  <img src="Images/assembly_exploded.png" alt="Vedere Explodată Ansamblu" width="600"/>
+  <img src="Images/inktime-3d-expanded-view.jpg" alt="Vedere Explodată Ansamblu" width="600"/>
   <br><em>Vedere explodată a ansamblului smartwatch-ului InkTime</em>
+</p>
+
+<p align="center">
+  <img src="Images/inktime-watch-no-screen.jpg" alt="Smartwatch fără ecran" width="600"/>
+  <br><em>Smartwatch-ul InkTime fără ecran (vedere interioară)</em>
 </p>
 
 ---
@@ -483,8 +483,8 @@ Modele parametrice OpenSCAD sunt furnizate în folderul `Mechanical/`:
    - Conform cerințelor proiectului, toate componentele SMD sunt plasate exclusiv pe TOP
    - Aceasta simplifică asamblarea (reflow pe o singură față) și reduce costul
 
-4. **Componente pasive 0201**
-   - Toate rezistoarele sunt SMD 0201
+4. **Componente pasive**
+   - Toate rezistoarele sunt SMD 0402
    - Condensatoarele ≤100nF sunt 0201, >100nF sunt 0402
    - Excepție: valori mai mari (22µF) și capsule specifice notate în schemă
 
@@ -532,11 +532,11 @@ proiect_TSC/
 │   ├── shaker_FIT0774.scad         # Model 3D — Motor vibrație (Ø10×2.7mm)
 │   └── full_assembly.scad          # Ansamblu complet cu vedere explodată
 ├── Images/
-│   ├── Capture.PNG                 # Randare PCB top (izometric)
-│   ├── Capture1.PNG                # Randare PCB bottom (izometric)
-│   ├── block_diagram.png           # Diagrama bloc a sistemului
-│   ├── assembly_exploded.png       # Vedere explodată ansamblu
-│   └── watch_render.png            # Randare ceas complet
+│   ├── 3dpcb.jpg                   # Randare PCB 3D
+│   ├── block_diagram.jpg           # Diagrama bloc a sistemului
+│   ├── inktime-3d-expanded-view.jpg# Vedere explodată ansamblu
+│   ├── inktime-full-watch.jpg      # Randare ceas complet
+│   └── inktime-watch-no-screen.jpg # Randare ceas fără ecran
 ├── LICENSE                         # Licență Apache 2.0
 └── README.md                       # Acest fișier
 ```
